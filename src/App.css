@@ -114,6 +114,10 @@
 .twitch .twitch-button.right {
   right: 0%;
 }
+
+.twitch .twitch-button.left {
+  left: 0%;
+}
 .react-stacked-center-carousel {
   padding: 20px 0;
 }
