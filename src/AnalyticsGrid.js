@@ -9,7 +9,10 @@ const AnalyticsGrid = () => {
     return (
     <div className="analytics-grid">
         {data.map((item) => (
-            <ViewerCard youtubeID={item.youtubeID} json_data={item.json_data}/>
+            <div className='full-card'>
+                <ViewerCard youtubeID={item.youtubeID} json_data={item.json_data}/>
+                <h3 className="title" style={{"color": "black"}}>Nick Taylor's 72-Foot Putt</h3>
+            </div>
         ))}
     </div>
     );

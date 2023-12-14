@@ -72,7 +72,7 @@ const GolfViewer = ({ locations, end }) => {
       
   
 
-  return <canvas ref={canvasRef} width={800} height={1230} />;
+  return <canvas ref={canvasRef} width={800} height={1233} />;
 };
 
 export default GolfViewer;

@@ -72,7 +72,7 @@ export const Slide = React.memo(function (props) {
     }
   }, [isCenterSlide]);
 
-  React.useEffect(() => () => {
+  React.useEffect(() => {
     clearTimeout(removeDelay);
     clearTimeout(loadDelay);
   });
