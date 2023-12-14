@@ -62,6 +62,7 @@ export const Slide = React.memo(function (props) {
   const [loadDelay, setLoadDelay] = React.useState();
   const [removeDelay, setRemoveDelay] = React.useState();
   const [loaded, setLoaded] = React.useState(false);
+
   React.useEffect(() => {
     if (isCenterSlide) {
       clearTimeout(removeDelay);
@@ -72,7 +73,7 @@ export const Slide = React.memo(function (props) {
     }
   }, [isCenterSlide]);
 
-  React.useEffect(() => {
+  React.useEffect(() => () => {
     clearTimeout(removeDelay);
     clearTimeout(loadDelay);
   });
@@ -91,7 +92,6 @@ export const Slide = React.memo(function (props) {
       </div>
       {loaded && (
         <div className='detail fill'>
-          {/* <img className='video' src={video} /> */}
           <VideoPlayer className='video' yid={youtubeID} width={460} height={300}/>
           <div className='top-view'>
             <GolfViewer locations={json_data.ball_locations} end={json_data.flag} />
