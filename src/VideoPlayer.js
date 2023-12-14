@@ -22,7 +22,7 @@ const VideoPlayer = ({width, height, yid}) => {
             url={yid}
             width={width}
             height={height}
-            playing
+            playing={false}
             controls
             onProgress={handleProgress}
             onStart={handleStart}

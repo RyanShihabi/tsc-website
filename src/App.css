@@ -194,17 +194,6 @@
   flex-direction: column;
 }
 
-.card .avatar {
-  background-color: #ff6161;
-}
-
-.card p {
-  cursor: auto;
-  padding: 0 12px;
-  font-size: 14px;
-  line-height: 150%;
-}
-
 /* Grid styles */
 .button-grid {
   display: grid;
@@ -240,23 +229,134 @@
 
 .slider-content {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .slider-button {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #3498db;
-  color: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 18px;
+  width: 200px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
+.slider-button img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 .slider-button:hover {
-  background-color: #2980b9;
+  background-color: #b1b8bd7a;
+}
+
+/* Banners */
+.banner h1 {
+  text-align: start;
+  color: black;
+}
+
+/* Analytics Grid styles */
+.analytics-grid {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(3, 400px);
+  gap: 80px; /* Adjust the gap between buttons */
+  max-width: 100%; /* Adjust the maximum width of the button grid */
+}
+
+.grid-button {
+  padding: 30px 50px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #ff7e26;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+}
+
+.grid-button:hover {
+  background-color: #f0f0f0; /* Light background color on hover */
+}
+
+/* Analytics card */
+.analytics-card {
+  transition: all 300ms ease;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.analytics-card:hover {
+  transform: scale(1.05);
+}
+
+.react-stacked-center-carousel-slide-0 .analytics-card {
+  cursor: default;
+}
+
+.react-stacked-center-carousel-slide-0 .analytics-card:hover {
+  transform: none;
+}
+
+.analytics-fill {
+  width: 100%;
+  height: 100%;
+}
+
+.analytics-card .card-overlay {
+  user-select: none;
+  position: absolute;
+  background-color: #00000099;
+  transition: all 300ms ease;
+}
+
+.analytics-card:hover .card-overlay {
+  background-color: #0000002d;
+}
+
+.react-stacked-center-carousel-slide-0 .card-overlay {
+  background-color: #00000099 !important;
+}
+
+.analytics-card .cover-image {
+  object-fit: cover;
+}
+
+.analytics-card .cover {
+  position: absolute;
+  transition: opacity 300ms ease;
+}
+.react-stacked-center-carousel-slide-0 .twitch-card .cover {
+  transition: opacity 300ms ease, z-index 0ms 300ms;
+}
+
+.analytics-card .cover.on {
+  opacity: 1;
+  z-index: 1;
+}
+
+.analytics-card .cover.off {
+  opacity: 0;
+  z-index: -1;
+}
+
+.analytics-card .analytics-detail {
+  display: flex;
+}
+.analytics-card .video {
+  width: 70%;
+}
+.analytics-card .analytics-top-view {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }

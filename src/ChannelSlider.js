@@ -7,6 +7,7 @@ const ChannelSlider = () => {
 
     return (
       <div className="horizontal-slider">
+        <h1 style={{'color': "black"}}>Sponsored Channels</h1>
         <div className="slider-content">
           {items.map((item, index) => (
             <div key={index} className="slider-button">
