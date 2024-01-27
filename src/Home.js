@@ -2,6 +2,7 @@ import React from 'react';
 import CardCarousel from './CardCarousel';
 import Navbar from './Navbar'
 import Grid from "./Grid"
+import AnalyticsGrid from './AnalyticsGrid';
 
 const Home = () => {
     return(
@@ -9,7 +10,7 @@ const Home = () => {
             <header className="App-header">
                 <Navbar />
                 <CardCarousel />
-                <Grid />
+                <AnalyticsGrid />
             </header>
         </div>
     );

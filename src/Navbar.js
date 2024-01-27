@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a href="/wigo" className="nav-links">
-                WIGO
+                Github
               </a>
             </li>
             <li className="nav-item">

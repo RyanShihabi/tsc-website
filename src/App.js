@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./Home";
-import Golf from "./Golf";
 
 import './App.css';
 
@@ -10,7 +9,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/golf" element={<Golf />} />
+        {/* <Route path="/golf" element={<Golf />} /> */}
       </Routes>
     </Router>
   );
