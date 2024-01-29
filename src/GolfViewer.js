@@ -35,11 +35,11 @@ const GolfViewer = ({ locations, end }) => {
             // Draw the dot at the current animated coordinate
             ctx.fillStyle = 'white'; // Change color to your desired dot color
             ctx.beginPath();
-            ctx.arc(animatedCoordinate.x * ctx.canvas.width, animatedCoordinate.y * ctx.canvas.height, 20, 0, 2 * Math.PI);
+            ctx.arc(animatedCoordinate.x * ctx.canvas.width, animatedCoordinate.y * ctx.canvas.height, 5, 0, 2 * Math.PI);
             ctx.fill();
       
             // Draw the final destination flag using the custom SVG path
-            const flagSize = 30;
+            const flagSize = 10;
             const flagX = end.x * ctx.canvas.width - flagSize / 2;
             const flagY = end.y * ctx.canvas.height - flagSize;
       
@@ -72,7 +72,7 @@ const GolfViewer = ({ locations, end }) => {
       
   
 
-  return <canvas ref={canvasRef} width={800} height={1233} />;
+  return <canvas ref={canvasRef} />;
 };
 
 export default GolfViewer;

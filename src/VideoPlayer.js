@@ -20,8 +20,8 @@ const VideoPlayer = ({width, height, yid}) => {
         <ReactPlayer
             ref={playerRef}
             url={yid}
-            width={width}
-            height={height}
+            width={"100%"}
+            height={"100%"}
             playing={false}
             controls
             onProgress={handleProgress}

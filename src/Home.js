@@ -1,16 +1,31 @@
 import React from 'react';
-import CardCarousel from './CardCarousel';
 import Navbar from './Navbar'
-import Grid from "./Grid"
-import AnalyticsGrid from './AnalyticsGrid';
+import putting_data from "./putting.json";
+import ViewerCard from './ViewerCard';
 
 const Home = () => {
     return(
         <div className="App">
             <header className="App-header">
                 <Navbar />
-                <CardCarousel />
-                <AnalyticsGrid />
+                {/* <CardCarousel /> */}
+                <h1 className='banner'>Recent PGA Upload</h1>
+                <div className='full-card'>
+                    <ViewerCard youtubeID={"https://www.youtube.com/watch?v=Wpu0X9XWrt8"} json_data={putting_data}/>
+                </div>
+
+                <br/>
+
+                <h1 className="banner">About</h1>
+
+                <div className="about-text">
+                    <p className='text'>I made these models to help people get a head start with real-time analytics projects.</p>
+                    <p className='text'>I see "Amaz"-ing companies not wanting to share their models so I hope this provides an option for hobbyists alike.</p>
+                    <p className='text'>If I have time I will make models for other sports and showcase the models here (inference from the most recent video on their youtube channel).</p>
+                    <p className='text'>The weights for the models are available in the Github repo.</p>
+                    <p className='text'>Hope you find it useful.</p>
+                </div>
+
             </header>
         </div>
     );
