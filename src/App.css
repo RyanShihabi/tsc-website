@@ -1,12 +1,5 @@
-/* Add custom styles here */
-
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
@@ -20,11 +13,8 @@
   padding-top: 5%;
 }
 
-/* Navbar styles */
-
 .navbar {
-  background-color: #ff7e26; /* Creamsicle Orange */
-  padding: 5px 0px;
+  background-color: #ff7e26;
   position: fixed;
   display: flex;
   width: 100%;
@@ -40,13 +30,6 @@
   margin: 0 auto 0 auto;
   padding: 0rem 4rem;
   
-}
-
-.navbar-logo {
-  color: #fff;
-  font-size: 10px;
-  text-decoration: none;
-  width: 5%;
 }
 
 .nav-menu {
@@ -68,235 +51,24 @@
   transition: color 0.3s ease;
 }
 
-/* Search bar styles */
-.search-bar-container {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.search-bar {
-  padding: 8px;
-  margin: 0 10px;
-  width: 500px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  text-align: center;
-}
-
-.search-bar input {
-  flex: 1;
-  border: none;
-  background: none;
-  outline: none;
-  text-align: center;
-}
-
-.search-icon {
-  align-items: center;
-  color: #555; /* Icon color */
-  padding-right: 10px;
-  font-size: 15px;
-}
-
-/* Carousel styles */
-.twitch .twitch-button {
-  position: absolute;
-  top: 43%;
-  box-shadow: none;
-  border-radius: 5px;
-  width: 36px;
-  height: 36px;
-  background-color: transparent;
-}
-.twitch .twitch-button.right {
-  right: 0%;
-}
-
-.twitch .twitch-button.left {
-  left: 0%;
-}
-.react-stacked-center-carousel {
-  padding: 20px 0;
-}
-
-.card {
-  transition: all 300ms ease;
-  display: flex;;
-  cursor: pointer;
-  width: 100%;
-  height: 300px;
-  position: relative;
-}
-
-
-.react-stacked-center-carousel-slide-0 .card {
-  cursor: default;
-}
-
-.react-stacked-center-carousel-slide-0 .card:hover {
-  transform: none;
-}
-
-.fill {
-  width: 100%;
-  height: 100%;
-}
-
-.card .card-overlay {
-  user-select: none;
-  position: absolute;
-  background-color: #00000099;
-  transition: all 300ms ease;
-}
-
-.card:hover .card-overlay {
-  background-color: #0000002d;
-}
-
-.react-stacked-center-carousel-slide-0 .card-overlay {
-  background-color: #00000099 !important;
-}
-
-.card .cover-image {
-  object-fit: cover;
-}
-
-.card .cover {
-  position: absolute;
-  transition: opacity 300ms ease;
-}
-.react-stacked-center-carousel-slide-0 .twitch-card .cover {
-  transition: opacity 300ms ease, z-index 0ms 300ms;
-}
-
-.card .cover.on {
-  opacity: 1;
-  z-index: 1;
-}
-
-.card .cover.off {
-  opacity: 0;
-  z-index: -1;
-}
-
-.card .detail {
-  display: flex;
-}
-.card .video {
-  width: 70%;
-}
-.card .top-view {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Grid styles */
-.button-grid {
-  display: grid;
-  margin-top: 50px;
-  grid-template-columns: repeat(5, 200px);
-  gap: 80px; /* Adjust the gap between buttons */
-  max-width: 100%; /* Adjust the maximum width of the button grid */
-}
-
-.grid-button {
-  padding: 30px 50px;
-  border: 1px solid;
-  border-radius: 8px;
-  font-size: 18px;
-  width: 100%;
-  height: 100%;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  background-color: #ff7e26;
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
-}
-
-.grid-button:hover {
-  background-color: #f0f0f0; /* Light background color on hover */
-}
-
-/* Channel Slider */
-.horizontal-slider {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 20px;
-}
-
-.slider-content {
-  display: flex;
-  gap: 50px;
-}
-
-.slider-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.slider-button img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.slider-button:hover {
-  background-color: #b1b8bd7a;
-}
-
-/* Banners */
 .banner h1 {
   text-align: start;
   color: black;
 }
 
-/* Analytics Grid styles */
-.analytics-grid {
-  display: grid;
-  margin-top: 50px;
-  grid-template-columns: repeat(3, 400px);
-  gap: 80px; /* Adjust the gap between buttons */
-  max-width: 100%; /* Adjust the maximum width of the button grid */
-}
-
-.grid-button {
-  padding: 30px 50px;
-  border: 1px solid;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  background-color: #ff7e26;
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
-}
-
-.grid-button:hover {
-  background-color: #f0f0f0; /* Light background color on hover */
-}
-
-/* Analytics card */
 .full-card {
   transition: all 300ms ease;
   text-align: start;
   display: flex;
   height: 100%;
   justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media (max-width: 780px) {
+  .full-card {
+    margin-top: 50px;
+  }
 }
 
 .analytics-card {
@@ -308,60 +80,22 @@
   
 }
 
-.react-stacked-center-carousel-slide-0 .analytics-card {
-  cursor: default;
-}
-
-.react-stacked-center-carousel-slide-0 .analytics-card:hover {
-  transform: none;
-}
-
 .analytics-fill {
   width: 100%;
   height: 100%;
 }
 
-.analytics-card .card-overlay {
-  user-select: none;
-  position: absolute;
-  background-color: #00000099;
-  transition: all 300ms ease;
-}
-
-.analytics-card:hover .card-overlay {
-  background-color: #0000002d;
-}
-
-.react-stacked-center-carousel-slide-0 .card-overlay {
-  background-color: #00000099 !important;
-}
-
-.analytics-card .cover-image {
-  object-fit: cover;
-}
-
-.analytics-card .cover {
-  position: absolute;
-  transition: opacity 300ms ease;
-}
-.react-stacked-center-carousel-slide-0 .twitch-card .cover {
-  transition: opacity 300ms ease, z-index 0ms 300ms;
-}
-
-.analytics-card .cover.on {
-  opacity: 1;
-  z-index: 1;
-}
-
-.analytics-card .cover.off {
-  opacity: 0;
-  z-index: -1;
-}
-
 .analytics-card .analytics-detail {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .analytics-card .analytics-detail {
+    flex-direction: column;
+  }
 }
 
 .analytics-card .analytics-top-view{
@@ -372,11 +106,10 @@
 br {
   content: "";
   display: block;
-  border-top: 1px solid #888; /* Adjust the color and thickness as needed */
-  margin: 5em 0 1em 0; /* Adjust as needed for spacing */
+  border-top: 1px solid #888;
+  margin: 5em 0 1em 0;
   width: 70%;
 }
-
 
 .banner {
   font-size: 20px;
@@ -392,4 +125,5 @@ br {
 
 .about-text{
   text-align: left;
+  padding: 0px 15px;
 }

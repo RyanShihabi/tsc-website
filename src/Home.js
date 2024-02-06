@@ -8,8 +8,6 @@ const Home = () => {
         <div className="App">
             <header className="App-header">
                 <Navbar />
-                {/* <CardCarousel /> */}
-                <h1 className='banner'>Recent PGA Upload</h1>
                 <div className='full-card'>
                     <ViewerCard youtubeID={"https://www.youtube.com/watch?v=Wpu0X9XWrt8"} json_data={putting_data}/>
                 </div>
@@ -19,9 +17,9 @@ const Home = () => {
                 <h1 className="banner">About</h1>
 
                 <div className="about-text">
-                    <p className='text'>I made these models to help people get a head start with real-time analytics projects.</p>
+                    <p className='text'>I wanted to make broadcast models to help people get a head start with real-time analytics projects.</p>
                     <p className='text'>I see "Amaz"-ing companies not wanting to share their models so I hope this provides an option for hobbyists alike.</p>
-                    <p className='text'>If I have time I will make models for other sports and showcase the models here (inference from the most recent video on their youtube channel).</p>
+                    <p className='text'>If I have time I will make models for other sports and showcase the models here.</p>
                     <p className='text'>The weights for the models are available in the Github repo.</p>
                     <p className='text'>Hope you find it useful.</p>
                 </div>
