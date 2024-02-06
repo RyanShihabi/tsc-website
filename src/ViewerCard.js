@@ -3,7 +3,6 @@ import VideoPlayer from "./VideoPlayer";
 import GolfViewer from "./GolfViewer";
 
 const ViewerCard = (props) => {
-
     return (
         <div className='analytics-card' draggable={false}>
             <div className='analytics-detail analytics-fill'>
