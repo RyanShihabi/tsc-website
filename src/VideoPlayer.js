@@ -8,12 +8,12 @@ const VideoPlayer = ({width, height, yid}) => {
         const currentTime = state.playedSeconds;
 
         if (currentTime >= 12) {
-            playerRef.current.seekTo(0);
+            playerRef.current.seekTo(4);
         }
     };
 
     const handleStart = () => {
-        playerRef.current.seekTo(3, 'seconds');
+        playerRef.current.seekTo(4, 'seconds');
     }
 
     return (
@@ -22,7 +22,7 @@ const VideoPlayer = ({width, height, yid}) => {
             url={yid}
             width={"100%"}
             height={"100%"}
-            playing={false}
+            playing={true}
             controls
             onProgress={handleProgress}
             onStart={handleStart}

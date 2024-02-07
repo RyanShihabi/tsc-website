@@ -63,6 +63,7 @@
   height: 100%;
   justify-content: space-between;
   margin-top: 20px;
+  width: 70%;
 }
 
 @media (max-width: 780px) {
@@ -96,6 +97,11 @@
   .analytics-card .analytics-detail {
     flex-direction: column;
   }
+
+  .analytics-top-view{
+    width: 100%;
+    margin-left: 0px !important;
+  }
 }
 
 .analytics-card .analytics-top-view{
@@ -126,4 +132,8 @@ br {
 .about-text{
   text-align: left;
   padding: 0px 15px;
+}
+
+canvas {
+  width: 100%;
 }
